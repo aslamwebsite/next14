@@ -1,0 +1,61 @@
+"use client"
+import React, { useEffect, useState, useRef } from 'react';
+import Slick from '@/component/Slider'
+import ScrollDown from '@/component/ScrollDown'
+import About from '@/component/About'
+import News from '@/component/News';
+import Numbers from '@/component/Numbers';
+import Projectslider from '@/component/Projectslider';
+import projectData from '@/json/project.json';
+import Footer from '@/component/Footer';
+import Header from '@/component/Header';
+import Accordian from '@/component/Accordian';
+import CustomCursor from '@/component/CustomCursor';
+import Loader from '@/component/Loader';
+
+export default function Home() {
+  const [loading, setLoading] = useState(true);
+  const categoryData = projectData.categories;
+  // console.log(categoryData);
+  if (!categoryData) {
+    return <p>Error</p>;
+  }
+  const smoothRef = useRef(null);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
+
+  useEffect(() => {
+    if (!loading) {
+      const loaderElement = document.querySelector('.loader');
+      if (loaderElement) {
+        loaderElement.classList.add('hideloader'); 
+      }
+    }
+  }, [loading]);
+  return (
+    <>
+    <Loader />
+    <CustomCursor />
+    <Header />
+    <main className="d-flex flex-wrap float-start col-12">
+    <section id='slider'>
+      <div className='col-12 float-start homeslider position-relative'>
+        <Slick />
+        <ScrollDown targetRef={smoothRef} />   
+        </div>
+        <News />
+        </section>
+        <section id="about" ref={smoothRef}>
+         <About />
+       </section>
+       <Numbers />
+       <Projectslider categoryData={categoryData} />
+       <Accordian faqData={""}/>
+    </main>
+    <Footer />
+    </>
+  )
+}
