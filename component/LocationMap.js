@@ -30,6 +30,11 @@ export const LocationMap = ( {locationData} ) => {
       <div className='container'>
         <div className='col-lg-10 m-auto col-12'>
           <div className='row'>
+          <div className='col-12 flaot-start flex-center'>
+                                <div className='heading text-center border-0'>
+                                    <h3 className='effectheading' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="150" data-aos-duration="1000" data-aos-once='true'>Location Map</h3>
+                                    </div>
+                            </div>
             <div className="col-lg-9 col-12">
               <div className='locationimage position-relative'>
               <TransformWrapper>

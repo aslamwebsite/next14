@@ -110,7 +110,7 @@ if (!categoryData) {
                       <Image src="/ss-banner.webp" width="1920" height="890"/>
                       </div>
                         <div className={`projectbanner ${isZoomed ? 'zoom-in' : 'zoom-out'}`}>                        
-                        <Image src={categoryData.category_bimage ? categoryData.category_bimage : ''} width='1920' height='980' alt='{text}' className='full-height'/>                        
+                        <Image src={categoryData.category_bimage ? categoryData.category_bimage : ''} width='1920' height='980' alt={text} className='full-height'/>                        
                         </div>
                         <div className='bannerimagecont position-absolute top-50 text-center col-12 float-start'>
                             <h2>{text}</h2>
@@ -118,16 +118,26 @@ if (!categoryData) {
                     </div>
                     <ScrollDown targetRef={smoothRef} />
                     <div className='projectfilter float-start col-12'  ref={smoothRef}>
+                    <div className='col-12 float-start'>
+                    <div className="container">
+                        <div className="row">
+                        <div className="breadcumtab"><ul><li><a href="/">Home</a></li><li>{slug}</li></ul></div>
+                        </div>
+                    </div>
+            </div>
+            <div className='col-12 float-start filterpadding'>
             <div className='container'>
               <div className='row'>
                 <div className='web-container'>
-                  <div className='col-12 float-start' data-aos="fade-left" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="800" data-aos-once='true'>
+                  <div className='col-12 float-start' data-aos="fade-left" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="500" data-aos-once='true'>
                     <FilterProject onSubmit={handleFilterSubmit} />                    
                   </div>
                 </div>
               </div>
+              </div>
             </div>
           </div>
+          
                 </section>
                 
                 <Category categoryToShow={categoryData} slugValue={slug} />

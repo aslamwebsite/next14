@@ -224,6 +224,7 @@ header {
   letter-spacing: 1.5px;
   font-family: var(--headingfont);
   color: var(--black-color);
+  text-transform: uppercase;
 }
 
 .textmovement-container {
@@ -358,7 +359,7 @@ header {
 
 .projectslickslider .slick-dots li button {
   border-radius: 0;
-  height: 5px;
+  height: 15px;
   padding: 0;
   width: 100%;
   transition: ease all 0.5s;
@@ -368,6 +369,7 @@ header {
   height: auto;
   width: 100%;
   transition: ease all 0.5s;
+  cursor: inherit;
 }
 
 .projectslickslider .slick-dots {
@@ -380,10 +382,11 @@ header {
 .projectslickslider .slick-dots li.slick-active button {
   background: var(--black-color);
   height: 5px;
+  margin-top: 5px;
 }
 
 .projectslickslider .slick-dots li button:before {
-  top: 2px;
+  top: 7px;
   z-index: -1;
 }
 
@@ -1269,7 +1272,7 @@ figure.snip0016 p:last-child,
 }
 
 .breadcumtab ul li a {
-  color: #b69a51;
+  color: var(--primary-color);
   position: relative;
 }
 
@@ -2741,7 +2744,6 @@ header.blackheader .fixed .fil0 {
 }
 .projectfilter{
   background-color: #f1f1f2;
-  padding: 100px 0;
   position: relative;
   z-index: 1;
 }
@@ -2762,4 +2764,7 @@ header.blackheader .fixed .fil0 {
   bottom: 0;
   left: 0;
   right: 0;
+}
+.filterpadding {
+  padding: 50px 0 100px 0;
 }

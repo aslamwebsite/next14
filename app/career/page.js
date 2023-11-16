@@ -13,7 +13,7 @@ const page = () => {
     <CustomCursor />
     <Header />
     <main className="d-flex flex-wrap float-start col-12">
-    <Banner imageSrc={careerUsImage} />
+    <Banner imageSrc={careerUsImage} pagename="career"/>
       <section >
         <div className='container'>
             <div className='row'>

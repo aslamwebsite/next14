@@ -20,7 +20,7 @@ const Category = ({ categoryToShow, slugValue }) => {
                                     <div className={`projectslider`} ref={(el) => projectSliders.current.push(el)}>
                                         <figure className='snip0016'>
                                             {categoryToShow.LuxuryResidences[index].imageSrc ?
-                                            <Image src={categoryToShow.LuxuryResidences[index].imageSrc} width='655' height='597' alt='' />
+                                            <Image src={categoryToShow.LuxuryResidences[index].imageSrc} width='655' height='597' alt={categoryToShow.LuxuryResidences[index].ProjectName} />
                                             : null}
                                             <figcaption>
                                                 <h4>{categoryToShow.LuxuryResidences[index].ProjectName}</h4>
@@ -51,7 +51,7 @@ const Category = ({ categoryToShow, slugValue }) => {
                                     <div className={`projectslider`} ref={(el) => projectSliders.current.push(el)}>
                                         <figure className='snip0016'>
                                             {categoryToShow.PremiumResidences[index].imageSrc ?
-                                            <Image src={categoryToShow.PremiumResidences[index].imageSrc} width='680' height='680' alt='' />
+                                            <Image src={categoryToShow.PremiumResidences[index].imageSrc} width='655' height='597' alt={categoryToShow.PremiumResidences[index].ProjectName} />
                                             : null}
                                             <figcaption>
                                                 <h4>{categoryToShow.PremiumResidences[index].ProjectName}</h4>
@@ -81,7 +81,7 @@ const Category = ({ categoryToShow, slugValue }) => {
                                     <div className={`projectslider`} ref={(el) => projectSliders.current.push(el)}>
                                         <figure className='snip0016'>
                                             {categoryToShow.DeliveredProjects[index].imageSrc ?
-                                            <Image src={categoryToShow.DeliveredProjects[index].imageSrc} width='680' height='680' alt='' />
+                                            <Image src={categoryToShow.DeliveredProjects[index].imageSrc} width='655' height='597' alt={categoryToShow.DeliveredProjects[index].ProjectName} />
                                             : null}
                                             <figcaption>
                                                 <h4>{categoryToShow.DeliveredProjects[index].ProjectName}</h4>

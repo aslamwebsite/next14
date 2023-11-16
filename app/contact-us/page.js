@@ -11,7 +11,7 @@ const page = () => {
     <>
     <CustomCursor />
     <Header />
-    <Banner imageSrc={contactUsImage} />
+    <Banner imageSrc={contactUsImage} pagename="Contact Us"/>
     <Footer />    
     </>
   )

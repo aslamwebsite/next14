@@ -7,9 +7,10 @@ export const AdvanceBanner = ( {bannerData} ) => {
   return (
     <>
       {sections && sections.map((section, index) => (
-        <Parallax key={index} bgImage={section.imageUrl} strength={500}>
-          <div style={{ height: '800px' }}>
-            <div className='projectcontent'>
+        <div className="parallaximage full-height col-12 float-start" data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>
+        <Parallax key={index} bgImage={section.imageUrl} strength={500} >
+          <div style={{ height: '900px' }}>
+            <div className='projectcontent' data-aos="fade-left" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="800" data-aos-once='true'>
               <h3>{section.content.title}</h3>
                 <ul>
                   {section.content.points.map((point, pointIndex) => (
@@ -21,6 +22,7 @@ export const AdvanceBanner = ( {bannerData} ) => {
             </div>
           </div>
         </Parallax>
+        </div>
       ))}
     </>
   );

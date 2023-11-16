@@ -59,7 +59,7 @@ const page = () => {
     <CustomCursor />
         <Header />
         <main className="d-flex flex-wrap float-start col-12">            
-        <Banner imageSrc={aboutUsImage} />
+        <Banner imageSrc={aboutUsImage} pagename='SS GROUP'/>
             <section>
                     <div className="aboutuspage">
                         <div className="container">
@@ -68,9 +68,9 @@ const page = () => {
                                     <div className="col-lg-11 m-auto col-12 float-start">
                                         <div className="aboutnavbar mb-5">
                                             <ul className="d-flex justify-content-between text-uppercase px-5 border py-3">
-                                                <li onClick={() => handleScrollTo(overviewRef)} data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="100" data-aos-once='true'><a>Overview</a></li>
-                                                <li onClick={() => handleScrollTo(ethosRef)} data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'><a>OUR ETHOS</a></li>
-                                                <li onClick={() => handleScrollTo(journeyRef)} data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="1000" data-aos-once='true'><a>OUR JOURNEY</a></li>
+                                                <li onClick={() => handleScrollTo(overviewRef)} data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="10" data-aos-duration="100" data-aos-once='true'><a>Overview</a></li>
+                                                <li onClick={() => handleScrollTo(ethosRef)} data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="10" data-aos-duration="500" data-aos-once='true'><a>OUR ETHOS</a></li>
+                                                <li onClick={() => handleScrollTo(journeyRef)} data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="10" data-aos-duration="1000" data-aos-once='true'><a>OUR JOURNEY</a></li>
                                             </ul>
                                         </div>
                                         <div className="overview text-center col-12 float-left" ref={overviewRef} data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>

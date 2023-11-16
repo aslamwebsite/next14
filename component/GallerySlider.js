@@ -51,7 +51,7 @@ export const GallerySlider = ( {galleryData} ) => {
                     <div className='row'>
                             <div className='col-12 flaot-start flex-center'>
                                 <div className='heading text-center border-0'>
-                                    <h3>GALLERY</h3>
+                                    <h3 className='effectheading' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="150" data-aos-duration="1000" data-aos-once='true'>GALLERY</h3>
                                     </div>
                             </div>
                         <div className='col-lg-10 m-auto col-12'>

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import PropTypes from 'prop-types'; 
 import styles from '@/app/About.module.css';
 
-const Banner = ({ imageSrc }) => {
+const Banner = ({ imageSrc, pagename }) => {
   const imageRef = useRef(null);
 
   useEffect(() => {
@@ -34,12 +34,19 @@ const Banner = ({ imageSrc }) => {
           </div>
         </div>
       </div>
+      <div className='col-12 float-start'>
+                    <div className="container">
+                        <div className="row">
+                        <div className="breadcumtab"><ul><li><a href="/">Home</a></li><li>{pagename}</li></ul></div>
+                        </div>
+                    </div>
+            </div>
     </section>
   );
 };
 
 Banner.propTypes = {
-  imageSrc: PropTypes.string.isRequired, // Validate that imageSrc is a required string prop
+  imageSrc: PropTypes.string.isRequired, 
 };
 
 export default Banner;
