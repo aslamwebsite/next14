@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Mediagallery from '@/component/Mediagallery';
+import Event from '@/component/Event'
 
 // Sample image data with years and months
 const imageGalleryData = [
@@ -62,6 +63,7 @@ function Mediatabs() {
           </Tabs>
 
           <Mediagallery gallery_data={filteredImages} />
+          <Event />
         </div>
       </div>
     </>

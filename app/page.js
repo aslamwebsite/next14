@@ -6,17 +6,34 @@ import About from '@/component/About'
 import News from '@/component/News';
 import Numbers from '@/component/Numbers';
 import Projectslider from '@/component/Projectslider';
-import projectData from '@/json/project.json';
+// import projectData from '@/json/project.json';
 import Footer from '@/component/Footer';
 import Header from '@/component/Header';
 import Accordian from '@/component/Accordian';
 import CustomCursor from '@/component/CustomCursor';
 import Loader from '@/component/Loader';
+import axios from 'axios';
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
-  const categoryData = projectData.categories;
+  const [categoryData, setCategoryData] = useState([]);
+  // const categoryData = projectData.categories;
   // console.log(categoryData);
+  
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('http://ssgroup.triverseadvertising.com/admin/api/fetch_cat.php');
+        setCategoryData(response.data.categories);
+        // console.log(response.data.categories);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   if (!categoryData) {
     return <p>Error</p>;
   }

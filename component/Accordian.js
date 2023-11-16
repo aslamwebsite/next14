@@ -22,9 +22,9 @@ const Accordian = ( {faqData} ) => {
         <div className='row'>
           <div className='web-container'>
             <div className='col-12 float-start text-center title'>
-              <h3>Frequently Asked Questions</h3>
+              <h3 data-aos="zoom-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>Frequently Asked Questions</h3>
             </div>
-            <div className='col-lg-10 m-auto col-12'>
+            <div className='col-lg-10 m-auto col-12' data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>
               <div className='col-12 float-start accordions'>
                 {faqData?
                 <>

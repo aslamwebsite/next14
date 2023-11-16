@@ -46,8 +46,8 @@ const About = () => {
                 <h3 className='effectheading' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>BUILT ON VALUES</h3>
               </div>
               <div className='col-12 float-start'>
-                <p data-aos="fade-up" data-aos-easing="ease-in">Trust is earned. Trust is the outcome of keeping your word and delivering excellence again and again. SS Group, Gurugram's leading real estate developer, with almost 29+ years of unwavering commitment, has maintained an envious track record of completed residential and commercial developments in the city, through a combination of financial, engineering and design expertise.</p>
-                <Link className="btns rounded" href='/about-us' data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in"><span className="text-green">Know More</span></Link>
+                <p data-aos="fade-up" data-aos-easing="ease-in" data-aos-once='true'>Trust is earned. Trust is the outcome of keeping your word and delivering excellence again and again. SS Group, Gurugram's leading real estate developer, with almost 29+ years of unwavering commitment, has maintained an envious track record of completed residential and commercial developments in the city, through a combination of financial, engineering and design expertise.</p>
+                <Link className="btns rounded" href='/about-us' data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in" data-aos-once='true'><span className="text-green">Know More</span></Link>
               </div>
             </div>
             <div className={`col-lg-7 col-12`}>

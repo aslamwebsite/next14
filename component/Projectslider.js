@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Slider from "react-slick";
 import Image from 'next/image';
+import Link from "next/link"
 
 const Projectslider = ({ categoryData }) => {
   console.log(categoryData);
@@ -54,6 +55,7 @@ const Projectslider = ({ categoryData }) => {
               <Slider {...settings}>
               {categoryData.homes.LuxuryResidences && Object.keys(categoryData.homes.LuxuryResidences).map((pd1, index) => (
                   <div key={index}>
+                    <Link href={(categoryData.homes.LuxuryResidences[index].linkActive==1) ? "/projects/homes/" + categoryData.homes.LuxuryResidences[index].slug : ""}>
                     <div className={`projectslider`} ref={(el) => projectSliders.current.push(el)}>
                                         <figure className='snip0016'>
                                         <span className='srv_layer'></span>
@@ -63,14 +65,16 @@ const Projectslider = ({ categoryData }) => {
                                             <figcaption>
                                                 <h4>{categoryData.homes.LuxuryResidences[index].ProjectName}</h4>
                                                 <p>{categoryData.homes.LuxuryResidences[index].location}</p>
-                                                <p><a href="#">Know More</a></p>
+                                                <p><a href='#'>Know More</a></p>
                                        </figcaption>
                               </figure>
                         </div>
+                        </Link>
                   </div>
                 ))}
                 {categoryData.homes.PremiumResidences && Object.keys(categoryData.homes.PremiumResidences).map((pd1, index) => (
                   <div key={index}>
+                    <Link href={(categoryData.homes.PremiumResidences[index].linkActive==1) ? "/projects/homes/" + categoryData.homes.PremiumResidences[index].slug : ""}>
                     <div className={`projectslider`} ref={(el) => projectSliders.current.push(el)}>
                                         <figure className='snip0016'>
                                         <span className='srv_layer'></span>
@@ -80,10 +84,11 @@ const Projectslider = ({ categoryData }) => {
                                             <figcaption>
                                                 <h4>{categoryData.homes.PremiumResidences[index].ProjectName}</h4>
                                                 <p>{categoryData.homes.PremiumResidences[index].location}</p>
-                                                <p><a href="#">Know More</a></p>
+                                                <p><a href='#'>Know More</a></p>
                                        </figcaption>
                               </figure>
                         </div>
+                        </Link>
                   </div>
                 ))}
               </Slider>
@@ -108,6 +113,7 @@ const Projectslider = ({ categoryData }) => {
               <Slider {...settings}>
               {categoryData.retail.LuxuryResidences && Object.keys(categoryData.retail.LuxuryResidences).map((pd1, index) => (
                   <div key={index}>
+                    <Link href={(categoryData.retail.LuxuryResidences[index].linkActive==1) ? "/projects/retail/" + categoryData.retail.LuxuryResidences[index].slug : ""}>
                     <div className={`projectslider`} ref={(el) => projectSliders.current.push(el)}>
                                         <figure className='snip0016'>
                                         <span className='srv_layer'></span>
@@ -117,14 +123,16 @@ const Projectslider = ({ categoryData }) => {
                                             <figcaption>
                                                 <h4>{categoryData.retail.LuxuryResidences[index].ProjectName}</h4>
                                                 <p>{categoryData.retail.LuxuryResidences[index].location}</p>
-                                                <p><a href="#">Know More</a></p>
+                                                <p><a href='#'>Know More</a></p>
                                        </figcaption>
                               </figure>
                         </div>
+                        </Link>
                   </div>
                 ))}
                 {categoryData.retail.PremiumResidences && Object.keys(categoryData.retail.PremiumResidences).map((pd1, index) => (
                   <div key={index}>
+                    <Link href={(categoryData.retail.PremiumResidences[index].linkActive==1) ? "/projects/retail/" + categoryData.retail.PremiumResidences[index].slug : ""}>
                     <div className={`projectslider`} ref={(el) => projectSliders.current.push(el)}>
                                         <figure className='snip0016'>
                                         <span className='srv_layer'></span>
@@ -134,14 +142,16 @@ const Projectslider = ({ categoryData }) => {
                                             <figcaption>
                                                 <h4>{categoryData.retail.PremiumResidences[index].ProjectName}</h4>
                                                 <p>{categoryData.retail.PremiumResidences[index].location}</p>
-                                                <p><a href="#">Know More</a></p>
+                                                <p><a href='#'>Know More</a></p>
                                        </figcaption>
                               </figure>
                         </div>
+                        </Link>
                   </div>
                 ))}
-                {Object.keys(categoryData.retail.OngoingProjects).map((pd1, index) => (
+                {categoryData.retail.OngoingProjects && Object.keys(categoryData.retail.OngoingProjects).map((pd1, index) => (
                   <div key={index}>
+                    <Link href={(categoryData.retail.OngoingProjects[index].linkActive==1) ? "/projects/retail/" + categoryData.retail.OngoingProjects[index].slug : ""}>
                     <div className={`projectslider`} ref={(el) => projectSliders.current.push(el)}>
                                         <figure className='snip0016'>
                                         <span className='srv_layer'></span>
@@ -151,10 +161,11 @@ const Projectslider = ({ categoryData }) => {
                                             <figcaption>
                                                 <h4>{categoryData.retail.OngoingProjects[index].ProjectName}</h4>
                                                 <p>{categoryData.retail.OngoingProjects[index].location}</p>
-                                                <p><a href="#">Know More</a></p>
+                                                <p><a href='#'>Know More</a></p>
                                        </figcaption>
                               </figure>
                         </div>
+                        </Link>
                   </div>
                 ))}
               </Slider>

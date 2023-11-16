@@ -18,7 +18,8 @@ const page = () => {
                         <div className='row'>
                             <div className=' flex-center'>
                                 <div className='col-12 float-start heading text-center'>
-                                    <h3>Media</h3>
+                                    <h3 className='effectheading' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>Media</h3>
+                                    
                                 </div>
                                 </div>  
                         </div>

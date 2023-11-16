@@ -19,7 +19,7 @@ const page = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://www.ssgroup-india.com/admin_new/api/fetch_product.php');
+        const response = await axios.get('http://ssgroup.triverseadvertising.com/admin/api/fetch_product.php');
         console.log(response);
         const project = response.data.projects.find((p) => p.slug === slug);
         console.log(project);
@@ -107,19 +107,19 @@ const page = () => {
               <div className='web-container'>
               <div className='col-12 flaot-start flex-center'>
                                 <div className='heading text-center border-0'>
-                                    <h3 className='effectheading' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="150" data-aos-duration="1000" data-aos-once='true'>quick link</h3>
+                                    <h3 className='effectheading' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>quick link</h3>
                                     </div>
                             </div>
                 <div className='col-lg-10 col-12 m-auto'>
                   <div className='row'>
                     <div className='col-lg-4 col-12'>
-                      <button className="realstatebtn text-white"><span className="text-white">BROCHURE</span></button>
+                      <button className="realstatebtn text-white" data-aos="fade-left" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'><span className="text-white">BROCHURE</span></button>
                     </div>
                     <div className='col-lg-4 col-12'>
-                      <button className="realstatebtn text-white"><span className="text-white">FLOOR PLANS</span></button>
+                      <button className="realstatebtn text-white" data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'><span className="text-white">FLOOR PLANS</span></button>
                     </div>
                     <div className='col-lg-4 col-12'>
-                      <button className="realstatebtn text-white"><span className="text-white">CONSTRUCTION UPDATES</span></button>
+                      <button className="realstatebtn text-white" data-aos="fade-right" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'><span className="text-white">CONSTRUCTION UPDATES</span></button>
                     </div>
                   </div>
                 </div>

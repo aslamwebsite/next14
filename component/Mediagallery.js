@@ -53,9 +53,9 @@ function Gallerybox({ gallery_data }) {
 
   return (
     <div className="Gallerybox mt-4">
-      <LightGallery onInit={onInit} speed={500} plugins={[lgThumbnail, lgZoom]}>
+      <LightGallery onInit={onInit} speed={500} plugins={[lgThumbnail, lgZoom]} >
         {mediaGallery.map((galData, index) => (
-          <a key={index} href={galData.image}>
+          <a key={index} href={galData.image} data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>
             <div className='galleryimage'>
             <img src={galData.image} alt={galData.titleData + ' ' + galData.news_paperName} />
             </div>
