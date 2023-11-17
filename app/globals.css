@@ -836,11 +836,11 @@ footer,
 
 .text-transform {
   position: absolute;
-  transform: rotate(90deg) translate(45%, 165%);
+  transform: rotate(90deg) translate(40%, 200%);
 }
 
 .text-transform h2 {
-  font-size: 96px;
+  font-size: 110px;
   line-height: 100px;
   transform: scale(-1);
   color: rgb(255 255 255 / 10%);

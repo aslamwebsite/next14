@@ -23,7 +23,7 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('/api/fetch_cat.php');
+        const response = await axios.get('https://www.ssgroup-india.com/admin_new/api/fetch_cat.php');
         setCategoryData(response.data.categories);
         // console.log(response.data.categories);
       } catch (error) {
