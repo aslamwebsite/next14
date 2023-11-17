@@ -15,11 +15,10 @@ const page = () => {
   const [project, setprojectData] = useState([]);
   const params = useParams();
   const slug = params.project;
-  // const project = projectData.projects.find((project) => project.slug === slug);
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://next14-drab.vercel.app/api/fetch_product.php');
+        const response = await axios.get('/api/fetch_product.php');
         console.log(response);
         const project = response.data.projects.find((p) => p.slug === slug);
         console.log(project);
