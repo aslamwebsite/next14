@@ -24,7 +24,7 @@ const Navbar = () => {
       <div className="navbar">
                 <div className={menus ? 'menus active' : 'menus'} >
                     <ul className='d-flex align-items-center toplinks'>
-                        <li><a className='col-12 float-start p-1'><button onClick={handleToggle} className="hemburgur"><span></span><span></span><span></span></button></a></li>
+                        <li><a className='col-12 float-start p-1'><button onClick={handleToggle} className="hemburgur"><span></span><span></span></button></a></li>
                     </ul>
                     <div className='menuslide'>
                         <div onClick={handleToggle} className='cross'><a><em>X</em></a></div>

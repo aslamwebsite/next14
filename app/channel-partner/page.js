@@ -19,7 +19,7 @@ const page = () => {
                 <div className='web-container'>
                     <div className='col-lg-12 text-center'>
                         <div className='heading border-0 text-uppercase p-0 mb-4'>
-                            <h3 className='effectheading' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="150" data-aos-duration="500" data-aos-once='true'>JOIN HANDS WITH SS GROUP</h3>
+                            <h3 className='effectheading' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="500" data-aos-once='true'>JOIN HANDS WITH SS GROUP</h3>
                             </div>
                     </div>
                     <div className='col-12 float-start text-center mb-5'>

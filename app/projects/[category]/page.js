@@ -19,7 +19,7 @@ const page = () => {
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await axios.get('http://ssgroup.triverseadvertising.com/admin/api/fetch_cat.php');
+            const response = await axios.get('https://next14-drab.vercel.app/api/fetch_cat.php');
             setCategoryData(response.data.categories[slug]);
             console.log(response.data.categories[slug]);
           } catch (error) {

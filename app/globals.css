@@ -114,7 +114,7 @@ ul {
 
 .hemburgur {
   width: 50px;
-  height: 10px;
+  height: 20px;
   transform: rotate(0deg);
   position: relative;
   float: right;
@@ -169,8 +169,11 @@ ul {
 }
 
 .hemburgur span:nth-child(1) {
-  top: 0px;
+  top: 5px;
   width: 75%;
+}
+.hemburgur span:nth-child(2) {
+  bottom: 5px;
 }
 
 header {
