@@ -54,6 +54,13 @@ const page = () => {
     useEffect(() => {
         triggerTypingEffect();
     }, []);
+    const aboutNumbers =[
+        { startValue: 10, endValue: 29, speed: 300, label: 'Years', symbol: '+' },
+        { startValue: 50, endValue: 173, speed: 200, label: 'LAKH SQ.FT DELIVERED' },
+        { startValue: 50, endValue: 75000, speed: 100, label: 'CUSTOMERS', symbol: '+' },
+        { startValue: 10, endValue: 23, speed: 300, label: 'PROJECTS DELIVERED', symbol: '+' },
+        { startValue: 10, endValue: 146, speed: 200, label: 'LAKH SQ.FT. IN PLANNING', symbol: '+' },
+    ]
   return (
     <>
     <CustomCursor />
@@ -74,8 +81,8 @@ const page = () => {
                                             </ul>
                                         </div>
                                         <div className="overview text-center col-12 float-left" ref={overviewRef} data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>
-                                            <p>Trust is earned. Trust is the outcome of keeping your word and delivering excellence again and again. SS Group, Gurugram&quot;s leading real estate developer, with almost 29+ years of unwavering commitment, has maintained an envious track record of completed residential and commercial developments in the city, through a combination of financial, engineering and design expertise. As a Company we believe in creating people centric developments while being responsible for our planet at the same time.</p>
-                                            <p>Our dedicated team of architects and engineers focuses on innovative technology with exceptional quality control. They create landmarks that are innovative and inspiring, fairly appreciated both for their design and quality as well as their future value. Some of our notable projects delivered in Gurugram include The Hibiscus, SS Plaza, Southend, Aaron Ville, and The Lilac, to name a few.</p>
+                                            <p>Trust is earned. Trust is the outcome of keeping your word and delivering excellence again and again. SS Group, Gurugram's leading real estate developer, with almost 29+ years of unwavering commitment, has maintained an envious track record of completed residential and commercial developments in the city, through a combination of financial, engineering and design expertise. As a Company we believe in creating people centric developments while being responsible for our planet at the same time.</p>
+                                            <p>Our dedicated team of architects and engineers focuses on innovative technology with exceptional quality control. They create landmarks that are innovative and inspiring, fairly appreciated both for their design and quality as well as their future value. Some of our notable projects delivered in Gurugram include The Hibiscus, SS The Leaf, SS Plaza, SS Omnia, Southend, Aaron Ville, and The Lilac, to name a few.</p>
                                             <p>With one of the largest land banks in Delhi NCR, the Group is committed to developing state-of-the-art real estate masterpieces. As a step-up on its ladder of success, the Group is diversifying into Brewery, Healthcare, Hospitality and Education.</p>
                                         </div>
                                     </div>
@@ -84,7 +91,7 @@ const page = () => {
                         </div>
                     </div>
                 </section>
-            <Numbers />
+                <Numbers countersData={aboutNumbers} />
             <section>
                     <div className="quotes">
                         <div className="container">
@@ -143,11 +150,13 @@ const page = () => {
                                     <div className="col-12 float-start text-center title">
                                         <h3 data-aos="zoom-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>FROM THE MD&quot;S DESK</h3>
                                     </div>
-                                    <div className="col-12 float-start text-center">
-                                        <p data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>
-                                            SS Group has been in existence for nearly three decades, nurturing the vision of providing inspiring properties for the users to work, live and play. Recognizing the basic need of mankind for a better tomorrow, we are keenly aware of the importance of creating value that stands the test of time.</p>
-                                        <p data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="120" data-aos-duration="600" data-aos-once='true'>At SS Group, we stay committed to building a long-term sustainable society by undertaking planned development across the residential, commercial and retail segments. Excellence in our business is a goal we work towards and we strive to improve continuously to keep pace with the changing real estate trends. By contemplating the finest details in all our developments, right from the design to the delivery, we make every effort to deliver quality construction, with completion of the projects within the defined time-frame promised to our customers.</p><p data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="120" data-aos-duration="600" data-aos-once='true'>With the aim to understand our customers dreams and realize them to the fullest, our creativity leads us to adopt advanced technology and resources. We are fully committed to this approach and pursue it with fervor in all our upcoming developments.
+                                    <div className="col-11 m-auto float-start text-center">
+                                        <p data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>India's robust economic growth is being driven by its vast and youthful workforce, positioning it as a global economic powerhouse. This sets the stage for an exciting future in the Indian real estate sector, with substantial market expansion on the horizon.</p>
+                                        <p data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="120" data-aos-duration="600" data-aos-once='true'>The recent surge in real estate demand is most evident in the Delhi/NCR region, particularly Gurugram, where the past decade has witnessed an unprecedented wave of new developments in both residential and commercial space.</p><p data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="120" data-aos-duration="600" data-aos-once='true'>At SS Group, we are at the forefront of planned growth and development across residential, commercial, and retail real estate. Our unwavering commitment to excellence, combined with our promise to create a fulfilling lifestyle for our valued customers, motivates us to contribute to a brighter future for India.
                                         </p>
+                                        <p data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="120" data-aos-duration="600" data-aos-once='true' className="fw-bold"><em>SS Group has always managed to achieve outstanding growth over its long journey of almost three decades. I am proud to be supported by a team that believes in my vision, that operating responsibly is not only a good practice, but it is simply the right thing to do.</em></p>
+                                        <p data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="120" data-aos-duration="600" data-aos-once='true' className="fw-bold"><em>Our rock solid numbers bear testimony to our commitment to deliver world class lifestyle in Gurugram.</em></p>
+                                        <p data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="120" data-aos-duration="600" data-aos-once='true'>The growth of SS Group has been well complemented by NCR’s growth in the corporate environment and the demand for office space as well as urban accommodations. Being a professionally managed Company, we have taken initiatives to derive the benefits from centralized processes, organized manpower and hiring qualified professionals in areas like project management, architecture and engineering. Our focus is to be future ready to meet the demands of the expected lifestyles and growth in the times ahead.</p>
                                     </div>
                                     <div className="col-12 pt-5 mt-5 float-start text-center">
                                         <p className="text-uppercase m-0 text-black" data-aos="fade-down" data-aos-easing="ease-in" data-aos-offset="130" data-aos-duration="700" data-aos-once='true'><strong>ASHOK SINGH JAUNAPURIA</strong></p>

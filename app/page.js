@@ -52,6 +52,7 @@ export default function Home() {
       }
     }
   }, [loading]);
+  const columnTexts = ['First column text', 'Second column text', 'Third column text'];
   return (
     <>
     <Loader />
@@ -68,7 +69,7 @@ export default function Home() {
         <section id="about" ref={smoothRef}>
          <About />
        </section>
-       <Numbers />
+       <Numbers numberOfColumns={3} columnTexts={columnTexts} />
        <Projectslider categoryData={categoryData} />
        <Accordian faqData={""}/>
     </main>

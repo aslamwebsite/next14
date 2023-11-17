@@ -20,7 +20,7 @@ body {
   --secondary-color: #59595b;
   --white-color: #fff;
   --black-color: #000;
-  --gray-color: #ededed
+  --gray-color: #ededed;
 }
 
 svg {
@@ -111,7 +111,10 @@ ul {
   align-items: center;
   justify-content: center;
 }
-
+.navbar {
+  width: 50px;
+  margin-left: 50px;
+}
 .hemburgur {
   width: 50px;
   height: 20px;
@@ -123,7 +126,6 @@ ul {
   background: transparent;
   border: none;
   outline: 0;
-  margin-left: 35px;
 }
 
 .header {
@@ -186,6 +188,7 @@ header {
   font-size: 12px;
   letter-spacing: 5px;
   line-height: 20px;
+  padding: 5px;
 }
 
 
@@ -195,9 +198,7 @@ header {
   object-fit: cover;
 }
 
-.white .fil0 {
-  fill: var(--white-color);
-}
+
 
 .hemburgur:hover span {
   background-color: var(--white-color);
@@ -341,7 +342,6 @@ header {
 }
 
 .numbercolumn {
-  width: 25%;
   text-align: center;
 }
 
@@ -418,6 +418,7 @@ header {
   width: 90% ;
   margin-left: 10%;
   position: relative;
+  max-height: 680px;
 }
 
 .css-o4b71y-MuiAccordionSummary-content.Mui-expanded {
@@ -494,7 +495,7 @@ footer,
 }
 
 .odometer-inside,
-.quotes p {
+.quotes p, .garamondpro {
   font-family: 'Adobe Garamond Pro';
 }
 
@@ -1742,7 +1743,8 @@ figure.snip0016 a {
 
 .circles .circle {
   margin: 0;
-  width: 200px;
+  width: 250px;
+  height: 250px;
   flex-wrap: wrap;
   text-align: center;
   transform: scale(0.1);

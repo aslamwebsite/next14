@@ -11,7 +11,7 @@ const Category = ({ categoryToShow, slugValue }) => {
             <div className='container'>
                 <div className='web-container row'>
                     <div className='title col-12 float-start text-center'>
-                        <h3 data-aos="zoom-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="500" data-aos-once='true'>On Going</h3>
+                        <h3 data-aos="zoom-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="500" data-aos-once='true'>Ongoing</h3>
                     </div>
                     {Object.keys(categoryToShow.LuxuryResidences).map((pd1, index) => (
                             <div key={index} className='col-lg-6 col-12 categoryimage' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="500" data-aos-once='true'>
